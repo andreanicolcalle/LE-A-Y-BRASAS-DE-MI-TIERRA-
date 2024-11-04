@@ -1,6 +1,4 @@
-.header{
-  position: relative;
-}
+
 .fondo-reservas{
   top: 0;
   width: 100%;
@@ -25,6 +23,7 @@
 .titulo__header h3{
   margin-top: -10px;
   text-align: center;
+  font-family: katler-Rough;
   font-size: 4rem;
   color: var(--color-button);
   letter-spacing: 5px;
@@ -32,6 +31,7 @@
 .titulo__header p {
   width: 350px;
   text-wrap: pretty;
+  font-family: KumbhSans-Regular;
   font-size: 1.1rem;
   color: #fefefe;
   font-weight: 100;
@@ -49,6 +49,8 @@
   width: 35px;
 }
 .enlaces a{
+  font-family: KumbhSans-Regular;
+
   text-decoration: none;
   color: #fefefe;
   font-size: 1.2rem;

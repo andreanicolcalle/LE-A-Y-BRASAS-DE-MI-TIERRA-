@@ -13,6 +13,9 @@
 }
 .mani__title {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   top: 12%;
 }
 .mani__title h1 {
@@ -29,17 +32,11 @@
   text-align: center;
   font-family: 2.5em;
 }
-.mani__title button {
-  background-color: var(--color-button);
-  color: var(--color-texto);
-  border: 1px solid var(--color-texto);
-  padding: 12px 18px;
-  border-radius: 20px;
-  font-size: 0.7em;
-  letter-spacing: 2px;
-  display: block;
-  margin-top: 50px;
+.button{
+  margin-top: 30px;
+  text-decoration: none;
 }
+
 
 /*----- fin del  header -- main ---- */
 
@@ -47,7 +44,7 @@
 
 .header__main img {
   position: absolute;
-  width: clamp(100px, 30vw, 430px);
+  width: 300px;
 }
 .header__main-img-1 {
   left: 0;
@@ -429,7 +426,7 @@
   font-weight: 100;
   margin-top: 5px;
   letter-spacing: 1px;
-  text-align: justify;
+  text-align: start;
   color: #e7e4e4;
   font-weight: 100;
 }

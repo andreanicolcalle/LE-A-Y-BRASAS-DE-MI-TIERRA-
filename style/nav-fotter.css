@@ -33,8 +33,6 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: Katler-Rough;
-  container-type: inline-size;
-  container-name: header;
   
 }
 /*----------nav-movil-----*/
@@ -44,7 +42,7 @@ body {
   justify-content: center;
   padding: 10px 0;
   display: none;
-  z-index: 100;
+  z-index: 200;
 
 }
 .icon-inicio{
@@ -65,9 +63,11 @@ body {
 .capa{
   display: none;
   position: absolute;
+  top: 0;
   min-width: 100%;
   height: 100vh;
   background-color: #0f0d0d6f;
+  backdrop-filter: blur(5px);
 }
 .nmovil-container {
   z-index: 50;
@@ -76,12 +76,11 @@ body {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 100px; /* Ajusta según la posición deseada */
+  top: 120px; /* Ajusta según la posición deseada */
   left: 0;
   width: 100%;
-  min-height: 100%;
-  background-color: #333; /* Cambia según tu diseño */
-  color: #fff;
+  min-height: 100%; /* Cambia según tu diseño */
+  color: #e68c07;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -101,10 +100,11 @@ body {
   font-size: 1.2rem;
 }
 .nmovil-items:hover{
-  background-color: #1b1b1b;
+  
 }
 .nmovil-items a:hover {
   color: #e68c07;
+  border-bottom: 2px solid #e68c07;
 }
 
 /*----------nav-movil-----*/
@@ -144,6 +144,25 @@ body {
 
 /*-------------- finn nav --------------*/
 /*botones*/
+.menu-button{
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+.menu-button img{
+  width:20px ;
+}
+.cortes_contenido .menu-button img{
+  width: 20px;
+  margin: 0;
+}
+
+
+
 .button {
   border: 2px solid #e7e4e4;
   color: #e7e4e4;

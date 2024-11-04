@@ -8,11 +8,15 @@
   background-size:cover ;
   overflow: hidden;
 }
-.menu-button{
-  position: absolute;
-  bottom: 10%;
-  left: 40%;
+.button-prom{
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  left: 46%;
 
+  
+ 
 }
 .pollo-entero{
   display: block;
@@ -184,9 +188,14 @@ align-items: center;
   background-size:cover ;
   overflow: hidden;
 }
-.menu-button{
-  position: absolute;
-  bottom: 10%;
-  left: 40%;
+.button-prom{
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  left: 35%;
+
+  
+ 
 }
 }

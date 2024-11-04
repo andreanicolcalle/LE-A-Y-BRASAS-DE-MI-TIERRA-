@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Katler-Rough";
+  src: url(../public/fonts/Katler-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "KumbhSans-Bold";
+  src: url(../public/fonts/KumbhSans-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "KumbhSans-Regular";
+  src: url(../public/fonts/KumbhSans-Regular.woff2) format("woff2");
+}

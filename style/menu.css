@@ -1,0 +1,663 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  font-family: "Katler-Rough";
+  position: relative;
+  background-image: url(../public/image/escritorio\ 1.png);
+  background-position: center;
+  background-size:cover ;
+  overflow: hidden;
+  z-index: 10;
+}
+.menu-button{
+  position: absolute;
+  bottom: 10%;
+}
+.header .img-1,
+.img-2 {
+  position: absolute;
+  width: 35%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .img-1 {
+  left: -5%;
+}
+.header .img-2 {
+  right: -5%;
+}
+.header .button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+/*--------MENUU-----------*/
+
+.container__menu {
+  width: clamp(400px, 100%, 1300px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tituto_menu {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  font-family: Katler-Rough;
+}
+.tituto_menu h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: var(--color-button);
+  letter-spacing: 1.5px;
+  margin: 0px 5px;
+  margin-top: 11px;
+}
+.tituto_menu span {
+  display: block;
+  letter-spacing: 3px;
+  font-size: 2.9rem;
+  margin-top: -10px;
+}
+.tituto_menu img:first-child {
+  transform: rotate(180deg);
+}
+
+.menu .vector-1 {
+  width: 45%;
+  position: absolute;
+  right: 0;
+}
+.menu .vector-2 {
+  width: 40%;
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
+.menu .vector-3 {
+  width: 35%;
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+}
+
+.aside__menu {
+  margin: 50px auto;
+  width: clamp(250px, 70%, 800px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.aside__menu img {
+  width: 340px;
+  margin-right: -80px;
+  z-index: 1;
+  position: relative;
+  z-index: 20;
+}
+.aside__menu img:nth-child(2n) {
+  margin-left: -80px;
+}
+
+.aside__menu .aside__menu-text:nth-child(1) {
+  text-align: end;
+}
+
+.aside__menu-text {
+  background-color: transparent; /* Capa semitransparente */
+  backdrop-filter: blur(10px); /* Aplicación del blur */
+  border-radius: 120px;
+  padding: 30px 100px;
+}
+.aside__menu-text h3 {
+  margin: 0;
+  font-family: Katler-Rough;
+  letter-spacing: 2px;
+  line-height: 40px;
+  font-size: 2.8rem;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+.aside__menu-text span {
+  margin: 0;
+  display: block;
+  font-size: 1.29em;
+}
+.aside__menu-text p {
+  width: 250px;
+  font-family: KumbhSans-Regular;
+  font-size: 0.8rem;
+  text-align: justify;
+  font-weight: 100;
+  margin-top: 12px;
+  letter-spacing: 1px;
+}
+.menu__botones {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  justify-content: start;
+  gap: 100px;
+}
+.plato-2 .menu__botones,
+.plate-4 .menu__botones {
+  justify-content: flex-end;
+}
+
+.menu__botones img {
+  width: 70px;
+}
+
+
+.plato-2 span:nth-child(1) {
+  font-size: 2rem;
+  margin-top: -8px;
+  letter-spacing: 2.4px;
+}
+.plato-2 span:nth-child(2) {
+  font-size: 2.6rem;
+  margin-top: -8px;
+}
+.plato-2,
+.plate-4 {
+  position: relative;
+  z-index: 20;
+}
+.plato-2 .hoja1,
+.plate-4 .hoja2 {
+  position: absolute;
+  right: 0;
+  top: -55px;
+  width: 230px;
+  z-index: 5;
+}
+
+.plate-4 span {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: -8px;
+}
+.plate-4 h3 {
+  font-size: 2.8rem;
+  letter-spacing: 5px;
+}
+
+/*cortes de pollo----------*/
+.conainer__cortes {
+  width: clamp(400px, 100%, 1300px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.titulo__cortes {
+  font-family: Katler-Rough;
+}
+.titulo__cortes h3 {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 3rem;
+  letter-spacing: 7px;
+  color: var(--color-button);
+  color: #fefefe;
+}
+.titulo__cortes span {
+  display: block;
+  letter-spacing: 2px;
+  margin-top: -10px;
+}
+.titulo__cortes img {
+  transform: rotate(-90deg);
+  margin-left: 10px;
+}
+
+.cortes-pollo {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.corte {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.corte .pollo {
+  width: 400px;  
+  z-index: 10;
+}
+.cortes_contenido {
+  margin-top: -150px;
+  border: 2px solid #fefefe;
+  padding: 200px 50px 50px;
+  width: 300px;
+  border-radius: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cortes_contenido span {
+  display: block;
+  color: var(--color-button);
+}
+.cortes_contenido h3 {
+  font-family: Katler-Rough;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.cortes_contenido span:first-child {
+  font-size: 3.5rem;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-left: 8px;
+}
+.cortes_contenido span:nth-child(2) {
+  font-size: 1.7rem;
+}
+.cortes_contenido span:last-child {
+  font-size: 2.7rem;
+  letter-spacing: 3px;
+}
+.cortes_contenido p {
+  font-family: KumbhSans-Bold;
+  color: #fefefe;
+  text-align: center;
+  margin-top: 20px;
+  width: 200px;
+  text-align: justify;
+}
+.cortes_contenido img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+.cortes_contenido .button {
+  border: 1px solid #fefefe;
+  color: #fefefe;
+}
+
+/*---fin----cortes de pollo----------*/
+
+/*----------Guarnicionesss--------*/
+
+
+.container__guarniciones {
+  width: clamp(300px, 100%, 900px);
+  margin:auto;
+  margin-top: 80px;
+  position: relative;
+  
+}
+
+.guarniciones__titulo {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.titulo h3 {
+  font-size: 3.5rem;
+  font-family: Katler-Rough;
+  letter-spacing: 5px;
+  color: #e68c07;
+}
+.titulo p {
+  color: #e7e4e4;
+  font-family: KumbhSans-Regular;
+  font-size: 0.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: -8px;
+}
+.titulo {
+  margin: 0 10px;
+}
+.guarniciones__titulo .fuego {
+  transform: rotate(180deg);
+}
+/* Estilos generales del contenedor del slider */
+.slider__Guarniciones {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Estilos para el contenedor de cada slide */
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 300%; /* Para 3 slides */
+}
+
+/* Cada slide ocupa el ancho completo del contenedor visible */
+.slider {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Estilos para las imágenes */
+.slider__Guarniciones img {
+  width: 300px;
+  transition: transform 0.3s ease-out;
+}
+
+/* Efecto de escala en hover */
+.slider img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos del texto de cada slide */
+.texto-guarniciones {
+  width: 200px;
+  text-align: start;
+}
+
+/* Estilos para el título */
+.slider h4 {
+  color: #e7e4e4;
+  font-family: 'Katler-Rough', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+/* Para el span dentro del título */
+.slider span {
+  display: block;
+}
+
+/* Estilos para el párrafo de descripción */
+.slider p {
+  margin-bottom: 10px;
+  font-family: 'KumbhSans-Regular', sans-serif;
+  font-size: 0.8rem;
+  color: #e7e4e4;
+}
+.arrow-izquierda ,.arrow-derecha {
+  position: absolute;
+  width: 60px;
+  top: 60%;
+  transform: translateY(-50%);
+  transition: all .2s ease-in;
+  z-index: 50;
+}
+.arrow-derecha{
+right: 10%;
+}
+.arrow-izquierda{
+left: 10%;
+}
+ svg:hover{
+cursor: pointer;
+scale: 1.1;
+}
+.arrow-izquierda path,.arrow-derecha path{
+ fill: #e7e4e4;
+}
+.slider-bebidas .arrow-izquierda{
+  position: absolute;
+  color: #e7e4e4;
+}
+
+
+
+
+/*----------Guarnicionesss--------*/
+
+
+/*----------slider-bebidas------*/
+
+.container__bebidas{
+  width: clamp(400px,100%,1300px);
+  margin: auto;
+  margin-bottom: -150px;
+  position: relative;
+  padding: 0 20px;
+}
+.titulo__bebidas{
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: var(--color-button);
+  color: #fefefe;
+  font-family: katler-Rough;
+  margin-bottom: 100px;
+}
+  
+.titulo__bebidas img{
+margin: 0;
+transform: rotate(-90deg);
+margin-left:-90px;
+
+}
+.titulo__bebidas h3{
+  margin-top: -20px;
+}
+.slider-bebidas{
+  margin: auto;
+  width: 672px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+.izquierda ,.derecha {
+  position: absolute;
+  width: 60px;
+  top: 60%;
+  transform: translateY(-50%);
+  transition: all .2s ease-in;
+  z-index: 50;
+}
+.derecha{
+right: 10%;
+}
+.izquierda{
+left: 10%;
+}
+ svg:hover{
+cursor: pointer;
+scale: 1.1;
+}
+.izquierda path,.derecha path{
+ fill: #e7e4e4;
+}
+.slider-bebidas .izquierda{
+  position: absolute;
+  color: #e7e4e4;
+}
+
+.bebidas{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px 120px 50px;
+  border: 2px solid #e7e4e4;
+  border-radius: 130px 130px 0 0;
+
+}
+
+.bebidas img{
+  width: 120px;
+}
+.descripcion-bebida{
+  display: flex;
+  flex-direction: column;
+}
+.descripcion-bebida span{
+  text-align: center;
+  color: #e7e4e4;
+  font-family:katler-Rough ;
+}
+.descripcion-bebida span:first-child{
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+.descripcion-bebida span:nth-child(2){
+  font-size: 1.3rem;
+}
+.descripcion-bebida .button{
+  border-color: #e7e4e4;
+  color: #e7e4e4;
+}
+
+/*----------fin-----slider-bebidas------*/
+
+/*section---responsive*/
+@media only screen and (max-width: 600px) {
+
+  .header {
+    width: 100%;
+    height: 100vh;
+    font-family: "Katler-Rough";
+    position: relative;
+    background-image: url(../public/image/movil.png);
+    background-position: center;
+    background-size:cover ;
+    overflow: hidden;
+  }
+  .menu-button{
+    position: absolute;
+    bottom: 10%;
+  }
+
+  .aside__menu img{
+    margin: 0;
+    width: 250px;
+  }
+  .aside__menu-text{
+    text-align: center;
+  }
+  .menu__botones{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .plato-2 .aside__menu-text{
+    order: 2;
+    text-align: center;
+  }
+  .plate-4 .aside__menu-text{
+    order: 2;
+    text-align: center;
+  }
+  .aside__menu .aside__menu-text:nth-child(1) {
+    text-align: center;
+  }
+  .aside__menu img:nth-child(2n) {
+    margin-left: 0;
+  }
+  .menu__botones img {
+    width: 80px;
+  }
+ 
+  .corte .pollo{
+    width: 250px;
+  }
+  .cortes_contenido p{
+    font-size: 0.7rem;
+  }
+  .cortes_contenido{
+    width: 250px;
+    padding: 150px 30px 80px 30px;
+  }
+  .arrow-izquierda,
+  .arrow-derecha {
+    width: 30px;
+    top: 65%;
+  }
+  .arrow-izquierda{
+    left: 1;
+  }
+  .arrow-derecha{
+right: 1;
+  }
+
+  .titulo h3 ,.titulo__bebidas{
+    font-size: 2.5rem;
+  }
+  .titulo p {
+    font-size: 0.35rem;
+  }
+  .titulo {
+    margin: 0 10px;
+  }
+  .guarniciones__titulo img ,.titulo__bebidas img{
+    width: 40px;
+  }
+  .titulo__bebidas img{
+    margin-left: -98px;
+    margin-bottom: 5px;
+  }
+  .slider img{
+    width: 160px;
+  }
+  .slider p {
+    margin-bottom: 10px;
+    font-family: 'KumbhSans-Regular', sans-serif;
+    font-size: 0.7rem;
+    
+  }
+  .texto-guarniciones {
+    width: 100px;
+    text-align: start;
+  }
+
+  
+.bebidas{
+  width: 100%;
+}
+
+.bebidas img{
+  width: 80px;
+}
+
+.descripcion-bebida span{
+  text-align: center;
+  color: #e7e4e4;
+  font-family:katler-Rough ;
+}
+.descripcion-bebida span:first-child{
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+.descripcion-bebida span:nth-child(2){
+  font-size: 1.3rem;
+}
+.descripcion-bebida .button{
+  border-color: #e7e4e4;
+  color: #e7e4e4;
+}
+.container__bebidas-slider{
+ width: 55%;
+ margin: auto;
+ overflow: hidden;
+}
+.slider-bebidas{
+  width: 300%;
+  transition: transform .3s ease-in;
+}
+.izquierda ,.derecha {
+  width: 40px;
+}
+}

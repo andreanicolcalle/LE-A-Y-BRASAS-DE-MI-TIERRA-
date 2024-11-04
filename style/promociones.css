@@ -1,0 +1,192 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  font-family: "Katler-Rough";
+  position: relative;
+  background-image: url(../public/image/escritorio\ 2.png);
+  background-position: center;
+  background-size:cover ;
+  overflow: hidden;
+}
+.menu-button{
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+
+}
+.pollo-entero{
+  display: block;
+  margin: 130px auto;
+}
+.container__promociones{
+  width: clamp(400px,100%,1300px);
+  margin: auto;
+}
+.contenido__promos{
+  margin:  130px auto 130px auto;
+  width: clamp(300px,70%,900px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contenido__promos:last-child{
+  gap: 100px;
+}
+.text-promos{
+  align-self: self-start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: max-content;
+  margin-top: 10px;
+}
+.text-promos h3{
+  font-family: Katler-Rough;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.text-promos span{
+  display: block;
+  color: var(--color-button);
+}
+.text-promos span:first-child{
+  font-size: 5rem;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.text-promos span:nth-child(2) {
+  font-size: 3.7rem;
+  letter-spacing: 3px;
+
+}
+.text-promos span:last-child {
+  font-size: 3.7rem;
+  letter-spacing: 3px;
+}
+.text-promos p {
+  font-family: KumbhSans-Regular;
+  color: #fefefe;
+  text-align: start;
+  margin: 20px 0;
+
+  width: 200px;
+}
+.text-promos img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+.text-promos .button {
+  border: 1px solid #fefefe;
+  color: #fefefe;
+}
+
+.img-promos{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.img-promos img:first-child{
+  width: 250px;
+  position: absolute;
+  right: 15%;  
+  margin-top: -70px;
+}
+.img-promos img{
+  width: 280px;
+}
+.img-promos img:nth-child(2){
+  margin-left:150px ;
+  margin-bottom: -60px;
+  z-index: 30;
+}
+.promos-2 {
+flex-direction: column-reverse;
+}
+.promos-2 .dosx1{
+    top: -20px;
+    left: 0;
+    z-index: 2;
+}
+.promos-2 img{
+  z-index: 30;
+}
+.promos-2 .pollo:nth-child(2){
+  margin-top: -60px;
+}
+
+
+@media only screen and (max-width: 600px) {
+ .contenido__promos{
+  padding: 0;
+  flex-wrap: wrap;
+ }
+  .text-promos span{
+    color: #fefefe;
+    display: inline;
+    
+  }
+  .text-promos span:first-child{
+    color: #fefefe;
+    display: block;
+
+  }
+  .text-promos span:last-child{
+    color: #fefefe;
+    display: block;
+  }
+  .text-promos p{
+    text-align: center;
+  }
+  .img-promos img:first-child{
+    width: 100px;
+  }
+  .img-promos img{
+    width: 150px;
+  }
+ 
+.img-promos img:first-child{
+  position: absolute;
+  right: 15%;  
+  margin-top: -30px;
+}
+
+.img-promos img:nth-child(2){
+ 
+}
+.img-promos img:nth-child(3){
+ margin-top: -50px;
+}
+.text-promos{
+align-items: center;
+}
+.img-promos{
+  margin-top: 50px;
+}
+.promos-2{
+  order: 2;
+}
+.promos-2 .dosx1:first-child{
+  top: -50px;
+}
+.promos-2 .pollo:nth-child(2){
+  margin-top: -90px;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  font-family: "Katler-Rough";
+  position: relative;
+  background-image: url(../public/image/movil\ 2.png);
+  background-position: center;
+  background-size:cover ;
+  overflow: hidden;
+}
+.menu-button{
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+}

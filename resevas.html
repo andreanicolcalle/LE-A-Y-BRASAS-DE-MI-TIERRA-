@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas-Leña y Brasas</title>
+    <link rel="stylesheet" href="style/nav-fotter.css" />
+    <link rel="stylesheet" href="style/reseras.css" />
+    <link rel="stylesheet" href="style/fonts.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- nav-movil -->
+      <nav class="header__nav-movil">
+        <a href="index.html"
+          ><img
+            src="public/logos/logo.png"
+            alt="LOGO LEÑA-BRASAS"
+            class="icon-inicio"
+        /></a>
+        <div>
+          <img
+            src="./public/logos/menu-movil.png"
+            alt="Icono de menú"
+            id="menu-movil"
+          />
+        </div>
+        <div class="capa"></div>
+        <ul class="nmovil-container hidden">
+          <li class="nmovil-items"><a href="menu.html">MENÚ</a></li>
+          <li class="nmovil-items"><a href="promociones.html">PROMOCIÓN</a></li>
+          <li class="nmovil-items"><a href="resevas.html">RESERVA</a></li>
+          <li class="nmovil-items"><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+
+      <!-- fin nav-movil -->
+      <nav class="header__nav">
+        <ul class="nav__container--items">
+          <li class="nav-items"><a href="menu.html">MENÚ</a></li>
+          <li class="nav-items"><a href="promociones.html">PROMOCIÓN</a></li>
+          <a href="index.html"
+            ><img src="public/logos/logo.png" alt="LOGO LEÑA-BRASAS"
+          /></a>
+          <li class="nav-items"><a href="resevas.html">RESERVA</a></li>
+          <li class="nav-items"><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+
+      <img
+        src="public/image/bg-reservas.png"
+        alt="Fondo Reservas"
+        class="fondo-reservas"
+      />
+
+      <div class="titulo__header">
+        <img src="public/image/fuego.svg" alt="vector fuego" />
+        <h3>BIENVENIDO <span>Reserva tu mesa</span></h3>
+        <button class="button">RESERVAR</button>
+      </div>
+    </header>
+
+    <main class="Container__reserva">
+      <div class="titulo__reserva">
+        <img src="public/image/fuego.svg" alt="vector fuego" />
+        <h3>COMPLETA EL<span>FORMULARIO</span></h3>
+        <p></p>
+      </div>
+
+      <form action="" class="form-form">
+        <div>
+          <label for="Nombre">Nombre </label>
+          <input type="text" required id="Nombre" />            
+        </div>
+        <div>
+          <label for="Correo">Correo Electronico</label>
+          <input type="email" required id="Correo" />
+        </div>
+        <div>
+          <label for="Telefono">Telefono </label>
+          <input type="text" id="Telefono" />
+        </div>
+        <div>
+          <label for="Cantidad">Cantidad </label>
+          <input type="text" id="Cantidad" />
+        </div>
+        <div>
+          <label for="Platos">Platos Interesados </label>
+          <input type="text" required id="Platos" />
+        </div>
+        <div>
+          <label for="Mensaje"> Añade un Mensaje</label>
+          <textarea name="" id="Mensaje"></textarea>
+        </div>
+        <button type="submit" class="button">ENVIAR</button>
+      </form>
+
+    </main>
+
+    <section class="Container__especial">
+      <div class="especial-contenido">
+        <h3>
+          PARA TU DIA <span>ESPECIAL</span><span>LEÑA Y BRASAS CON TIGO</span>
+        </h3>
+        <p>
+          Leña y Brasas te ofrece festejar tu día especial junto a ti, tenemos
+          una variedad de platos exclusivos para tu fecha especial, con n
+          ambiente acojedor, y nuestro equipo a tu disposición, tus deseos a la
+          orden.
+        </p>
+        <button class="button">RESERVAR</button>
+      </div>
+      <div class="especial-img">
+        <img src="public/image/rosasa.png" alt="rosas" />
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <section class="menu-footer">
+        <ul>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="promociones.html">PROMOCIONES</a></li>
+          <li><a href="reservas.html">RESERVAS</a></li>
+          <li><a href="contacto">CONTACTO</a></li>
+        </ul>
+      </section>
+      <section class="redes">
+        <div>
+          <img src="public/logos/fb.png" alt="Logo Faccebok" />
+        </div>
+        <div>
+          <img src="public/logos/in.png" alt="Instagram" class="instagram" />
+        </div>
+        <div><img src="public/logos/wp.png" alt="Whatsapp" /></div>
+
+        <a href="index.html"> <img src="public/logos/logo.png" alt="logo" /></a>
+
+        <div><img src="public/logos/yt.png" alt="Youtube" /></div>
+      </section>
+      <section class="horarios">
+        <h3>HORARIO DE ATENCION</h3>
+        <h3>11:00 AM - 17:00 PM</h3>
+        <h3>DE JUEVES A DOMINGO</h3>
+      </section>
+      <h5>DERECHOS RESERVADOS PARA LEÑA Y BRASAS DE MI TIERRA</h5>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,707 @@
+/*-----header -- main ---- */
+
+.header__main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+ 
+
+}
+.mani__title {
+  position: absolute;
+  top: 12%;
+}
+.mani__title h1 {
+  color: var(--color-button);
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
+  letter-spacing: 3px;
+  align-self: self-start;
+}
+.mani__title h2 {
+  font-size: clamp(1rem, 2vw, 2rem);
+  color: var(--color-texto);
+  letter-spacing: 8px;
+  font-weight: 500;
+  text-align: center;
+  font-family: 2.5em;
+}
+.mani__title button {
+  background-color: var(--color-button);
+  color: var(--color-texto);
+  border: 1px solid var(--color-texto);
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  display: block;
+  margin-top: 50px;
+}
+
+/*----- fin del  header -- main ---- */
+
+/* --- inicio de las imagenes del header */
+
+.header__main img {
+  position: absolute;
+  width: clamp(100px, 30vw, 430px);
+}
+.header__main-img-1 {
+  left: 0;
+  top: 0px;
+  animation: fadeInLeft 0.8s ease-out both;
+}
+.header__main-img-2 {
+  left: 8%;
+  bottom: 10%;
+  animation: fadeInLeft 0.8s ease-out both;
+  z-index: 10;
+}
+.header__main-img-3 {
+  bottom: 10%;
+
+  animation: fadeBottom 0.8s ease-out both;
+}
+.header__main-img-4 {
+  min-width: 400px;
+  right: 0;
+  top: 0;
+  animation: fadeInRight 0.8s ease-out both;
+}
+.header__main-img-5 {
+  right: 5%;
+  bottom: 10%;
+  animation: fadeInRight 0.8s ease-out both;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(
+      -800px
+    ); /* El elemento empieza fuera de pantalla, a la izquierda */
+  }
+  to {
+    transform: translateX(0); /* Termina en su posición original */
+  }
+}
+@keyframes fadeBottom {
+  from {
+    transform: translateY(
+      800px
+    ); /* El elemento empieza fuera de pantalla, a la izquierda */
+  }
+  to {
+    transform: translateX(0); /* Termina en su posición original */
+  }
+}
+@keyframes fadeInRight {
+  from {
+    transform: translateX(
+      800px
+    ); /* El elemento empieza fuera de pantalla, a la izquierda */
+  }
+  to {
+    transform: translateX(0); /* Termina en su posición original */
+  }
+}
+
+/* --- fin de las imagenes del header */
+/*--------FRASE----------*/
+.frase {
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+.frase img{
+  width: clamp(350px, 50%, 500px);
+}
+.frase h2 {
+  font-family: KumbhSans-Regular;
+  font-weight: 300;
+  width: clamp(300px, 50%, 400px);
+  display: inline;
+  text-align: center;
+  color: #e7e4e4;
+  font-size: clamp(2rem, 2.5vw, 3.5rem);
+  margin-bottom: 50px;
+}
+
+/*---- inicio del la seccion menu ---*/
+.menu {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  margin-bottom: 80px;
+  
+}
+
+.menu .vector-1 {
+  width: 45%;
+  position: absolute;
+  right: 0;
+}
+.menu .vector-2 {
+  width: 40%;
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
+.menu .vector-3 {
+  width: 35%;
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+}
+
+.aside__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.aside__menu img {
+  width: 340px;
+  margin-right: -80px;
+  z-index: 1;
+  position: relative;
+  z-index: 20;
+}
+.aside__menu img:nth-child(2n) {
+  margin-left: -80px;
+}
+ 
+.aside__menu .aside__menu-text:nth-child(1) {
+  text-align: end;
+}
+
+.aside__menu-text {
+  background-color: transparent; /* Capa semitransparente */
+  backdrop-filter: blur(10px); /* Aplicación del blur */
+  border-radius: 120px;
+  padding: 30px 100px;
+  border: 1px solid #e7e4e4;
+}
+.aside__menu-text h3 {
+  margin: 0;
+  font-family: Katler-Rough;
+  letter-spacing: 2px;
+  line-height: 40px;
+  font-size: 2.8rem;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+.aside__menu-text span {
+  margin: 0;
+  display: block;
+  font-size: 1.29em;
+}
+.aside__menu-text p {
+  width: 250px;
+  font-family: KumbhSans-Regular;
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin: 12px 0;
+  letter-spacing: 1px;
+}
+.aside__menu a {
+  font-family: Katler-Rough;
+  text-decoration: none;
+  color: var(--color-button);
+  letter-spacing: 1px;
+}
+.plato-2 span:nth-child(1) {
+  font-size: 2rem;
+  margin-top: -8px;
+  letter-spacing: 2.4px;
+}
+.plato-2 span:nth-child(2) {
+  font-size: 2.6rem;
+  margin-top: -8px;
+}
+.plato-2,
+.plate-4 {
+  position: relative;
+  z-index: 20;
+}
+.plato-2 .hoja1,
+.plate-4 .hoja2 {
+  position: absolute;
+  right: 150px;
+  top: -80px;
+  width: 230px;
+  z-index: 5;
+}
+
+.plate-4 span {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: -8px;
+}
+.plate-4 h3 {
+  font-size: 2.8rem;
+  letter-spacing: 5px;
+}
+/*----------Guarnicionesss--------*/
+
+.container__guarniciones {
+  margin: 50px auto;
+  position: relative;
+  width: clamp(300px, 80%, 700px);
+}
+
+.guarniciones__titulo {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.titulo h3 {
+  font-size: 3.5rem;
+  font-family: Katler-Rough;
+  letter-spacing: 5px;
+  color: #e68c07;
+}
+.titulo p {
+  color: #e7e4e4;
+  font-family: KumbhSans-Regular;
+  font-size: 0.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: -8px;
+}
+.titulo {
+  margin: 0 10px;
+}
+.guarniciones__titulo .fuego {
+  transform: rotate(180deg);
+}
+.container__slider {
+  width: clamp(300px, 90%, 900px);
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__Guarniciones {
+  display: flex;
+  align-items: center;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.slider {
+  min-width: 33%;
+  text-align: center;
+}
+
+.arrow-izquierda,
+.arrow-derecha {
+  position: absolute;
+  width: 50px;
+  top: 60%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  fill: #e7e4e4;
+  transition: scale 0.2s ease-in;
+}
+
+.arrow-derecha {
+  right: -20px;
+  z-index: 20;
+}
+
+.arrow-izquierda {
+  left: -20px;
+  z-index: 20;
+}
+
+.arrow-izquierda:hover,
+.arrow-derecha:hover {
+  scale: 1.05;
+}
+
+.slider img {
+  width: 200px;
+  transition: transform 0.3s ease-out;
+}
+
+.slider h4 {
+  color: #e7e4e4;
+  font-family: Katler-Rough;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.slider span {
+  display: block;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+  .slider img {
+    width: 150px;
+    transition: transform 0.3s ease-out;
+  }
+  .slider {
+    min-width: 50%;
+    text-align: center;
+  }
+  .arrow-izquierda,
+  .arrow-derecha {
+    width: 30px;
+    top: 65%;
+  }
+
+  .titulo h3 {
+    font-size: 2.5rem;
+  }
+  .titulo p {
+    font-size: 0.35rem;
+  }
+  .titulo {
+    margin: 0 10px;
+  }
+  .guarniciones__titulo img {
+    width: 40px;
+  }
+}
+/*----------Guarnicionesss--------*/
+/*----------Sobre Nosotros---------*/
+
+.s_nosotros {
+  width: clamp(300px, 80%, 800px);
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.s_nosotros .historia {
+  width: clamp(250px, 40%, 900px);
+  margin: 0 auto;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.historia-titulo h3 {
+  font-family: Katler-Rough;
+  font-size: 3rem;
+  text-align: center;
+  color: #e68c07;
+  letter-spacing: 5px;
+}
+.historia-titulo img {
+  transform: rotate(-90deg);
+  width: 40px;
+  margin-bottom: -9px;
+  margin-left: 5px;
+}
+.content-mv {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 35px;
+}
+.s_nosotros p {
+  font-family: KumbhSans-Regular;
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  text-align: justify;
+  color: #e7e4e4;
+  font-weight: 100;
+}
+
+.s_nosotros-mision {
+  width: clamp(250px, 40%, 450px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.mision-titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mision-titulo h3 {
+  font-family: Katler-Rough;
+  font-size: 3rem;
+  text-align: center;
+  color: #e68c07;
+  letter-spacing: 5px;
+}
+.mision-titulo img {
+  rotate: 180deg;
+  width: 30px;
+  margin-bottom: 9px;
+}
+.vision img {
+  rotate: -360deg;
+}
+.s_nosotros h4 {
+  font-family: Katler-Rough;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #e68c07;
+  font-weight: 100;
+}
+.valores {
+  width: clamp(300px, 80%, 800px);
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.content-valores {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+.valores article {
+  width: 200px;
+}
+.historia-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.historia-2 .historia-img {
+  width: 30%;
+}
+.content-text {
+  width: 40%;
+}
+.content-text .historia-titulo h3 {
+  text-align: start;
+}
+.header__main-movil{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .frase {
+   
+    margin-top: 0;
+  }
+  .s_nosotros .historia {
+    display: flex;
+  }
+  .historia-2 {
+    display: none;
+  }
+
+  .header__main {
+    display: none;
+  }
+  
+.header__main-movil {
+  
+  display: block;
+  margin: auto;
+  width: clamp(300px, 80%, 800px);
+  min-height: 80%;
+  position: relative;
+  z-index: 40;
+}
+.header-slider {
+min-width: 100%;
+overflow-x: hidden;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+}
+
+.slides {
+margin-top: 20px;
+width: 300%; /* Triple del ancho del contenedor para mostrar los 3 slides */
+align-self: self-start;
+display: flex;
+
+transition: transform 0.5s ease;
+}
+
+.slides-header {
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.slides-header img {
+width: 300px;
+}
+.slides h2 {
+display: block;
+text-align: center;
+width: 60%;
+font-size: 2.5rem;
+font-family: Katler-Rough;
+letter-spacing: 2px;
+color: #e68c07;
+}
+
+.content-radio-buttons {
+margin-top: 20px;
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+.radio-button {
+min-width: 15px;
+min-height: 15px;
+background-color: transparent;
+border: 1px solid #000;
+border-radius: 50%;
+cursor: pointer;
+}
+
+/* Estilos para mover el contenedor .slides dependiendo del slide seleccionado */
+#slide1:checked ~ .slides {
+transform: translateX(0%); /* Primer slide */
+}
+
+#slide2:checked ~ .slides {
+transform: translateX(-33.33%); /* Segundo slide */
+}
+
+#slide3:checked ~ .slides {
+transform: translateX(-66.66%); /* Tercer slide */
+}
+
+/* Cambia el color del punto de navegación seleccionado */
+input#slide1:checked ~ .content-radio-buttons label[for="slide1"],
+input#slide2:checked ~ .content-radio-buttons label[for="slide2"],
+input#slide3:checked ~ .content-radio-buttons label[for="slide3"] {
+background-color: #e68c07;
+}
+input[type="radio"] {
+  display: none;
+}
+
+
+.menu{
+  align-items: center;
+}
+.aside__menu{
+padding: 0;
+ width: 90%;
+}
+.aside__menu img{
+  width: 150px;
+}
+
+.aside__menu-text{ 
+  padding: 0;
+  width: 220px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aside__menu-text h3 {
+  padding: 0;
+  font-size: 1.8rem;
+}
+.aside__menu-text h3,a{
+  margin-right: -20px;
+}
+.aside__menu-text a{
+  margin-right: -30px;
+}
+.aside__menu-text span {
+  margin: 0;
+  display: block;
+  font-size: 1.2em;
+  margin-top: -15px;
+}
+.aside__menu-text p {
+ display: none;
+}
+.plato-2 .aside__menu-text,
+.plate-4 .aside__menu-text{
+  margin-left: -80px;
+}
+.aside__menu img:nth-child(2n) {
+  margin-left: -60px;
+}
+
+.plato-2 span:nth-child(1) {
+  font-size: 1.24rem;
+  margin-top: -15px;
+}
+.plato-2 span:nth-child(2) {
+  font-size: 1.24rem;
+  letter-spacing: 4px;
+  margin-top: -17px;
+}
+.plato-2 h3{
+  margin-left: -35px;
+}
+.plato-2 a{
+  margin-left: -35px;
+}
+
+.plato-2 .hoja1,
+.plate-4 .hoja2{
+  display: none;
+}
+.plate-4 h3{
+  letter-spacing: 3px;
+}
+.plate-4 span{
+  margin-top: -15px;
+  font-size: 1.24rem;
+  margin-left: -10px;
+}
+.plate-4 a{
+  margin-left: -20px;
+}
+.plate3 h3{
+margin-right: -53px;
+}
+}
+/* Pantallas medianas (tabletas) */
+
+
+/* Pantallas pequeñas (móviles) */
+
+
+/*----------fin Sobre Nosotros--------*/
+
+

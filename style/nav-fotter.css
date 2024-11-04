@@ -99,9 +99,7 @@ body {
   color: #fff;
   font-size: 1.2rem;
 }
-.nmovil-items:hover{
-  
-}
+
 .nmovil-items a:hover {
   color: #e68c07;
   border-bottom: 2px solid #e68c07;
@@ -118,7 +116,7 @@ body {
   z-index: 60;
 }
 .nav__container--items {
-  padding-top: 40px;
+  padding-top: 20px;
   width: 100%;
   display: flex;
   align-items: center;

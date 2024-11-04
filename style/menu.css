@@ -568,6 +568,9 @@ scale: 1.1;
     flex-direction: column;
     gap: 10px;
   }
+  .menu__botones .menu-button{
+  padding: 5px 20px;
+  }
   .plato-2 .aside__menu-text{
     order: 2;
     text-align: center;

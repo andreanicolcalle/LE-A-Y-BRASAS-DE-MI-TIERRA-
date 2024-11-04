@@ -8,17 +8,20 @@
   background-color: #000.1;
   backdrop-filter: blur(20px);
 }
-.titulo__header{
+.titulo__header {
+  position: absolute;
   backdrop-filter: blur(5px);
   border: 2px solid var(--color-button);
   padding: 40px 70px;
   border-radius: 150px;
   width: max-content;
   margin: auto;
-  margin-top: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  
 }
+
 
 .titulo__header h3{
   margin-top: -10px;
@@ -248,11 +251,13 @@
 .titulo__header{
   backdrop-filter: blur(5px);
   border: 2px solid var(--color-button);
-  padding: 40px 70px;
+  padding: 40px 40px;
   border-radius: 150px;
   width: max-content;
   margin: auto;
-  margin-top: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   
 }
